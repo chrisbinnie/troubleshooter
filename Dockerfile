@@ -1,6 +1,7 @@
 FROM debian:stable
 
-MAINTAINER Chris Binnie
+LABEL Chris Binnie
+LABEL chris@binnie.tld
 
 RUN apt update && apt install netcat -y && apt install telnet -y && apt install traceroute -y && apt install libcap-ng-utils -y && \  
     apt install curl -y && apt install wget -y && apt install tcpdump -y && apt install ssldump -y && \ 
